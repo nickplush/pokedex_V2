@@ -24,12 +24,12 @@ const Header = () => {
   const renderContent = () => {
     switch (isAuth) {
       case false:
-        return <Button href={'http://localhost:5000/auth/google'}>Login</Button>
+        return <Button href={'/auth/google'}>Login</Button>
       default:
         return (
           <div className={classes.root}>
             <Button href='/favorite'>favorite</Button>
-            <Button href={'http://localhost:5000/api/logout'}>Log out</Button>
+            <Button href={'/api/logout'}>Log out</Button>
           </div>
         )
     }
